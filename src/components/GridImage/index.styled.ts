@@ -10,11 +10,16 @@ export const GridImageWrapper = styled.div`
   &:hover .description {
     display: block;
   }
+
+  img {
+    border-radius: 4px;
+  }
 `;
 
 export const GalleryImageWrapper = styled.div`
   height: 100%;
   width: 100%;
+  border-radius: 4px;
 
   &::before {
     content: '';
@@ -91,7 +96,7 @@ export const DescriptionHover = styled.div`
   left: 100px;
   animation: ${fadeIn} 0.5s ease forwards;
   display: none;
-  border-radius: 5px;
+  border-radius: 4px;
 
   p {
     color: white;

@@ -8,4 +8,5 @@ export const ButtonWrapper = styled.button`
   font-size: 2rem;
   cursor: pointer;
   margin-top: 15px;
+  border: none;
 `;
