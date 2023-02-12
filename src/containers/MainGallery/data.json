@@ -1,0 +1,38 @@
+[
+    {
+    "photo": "study.png",
+    "title": "Seamless access",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime fuga nostrum ea, tenetur dolorem repellat error nobis odio veritatis, itaque pariatur voluptatibus tempore. Eaque dolorum perferendis culpa tempora placeat natus?"
+  },
+  {
+    "photo": "laptop.png",
+    "title": "Shared workspaces",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime fuga nostrum ea, tenetur dolorem repellat error nobis odio veritatis, itaque pariatur voluptatibus tempore. Eaque dolorum perferendis culpa tempora placeat natus?"
+  },
+ 
+   {
+    "photo": "computer.png",
+    "title": "Capacity management",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime fuga nostrum ea?"
+  },
+   {
+    "photo": "talk.png",
+    "title": "Credentials",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. "
+  }, {
+    "photo": "watch.png",
+    "title": "Connect people & spaces",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime fuga nostrum ea, tenetur dolorem repellat error nobis odio veritatis, itaque pariatur voluptatibus tempore. Eaque dolorum perferendis culpa tempora placeat natus?"
+  },
+   {
+    "photo": "door.png",
+    "title": "Intrusion detection",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime fuga nostrum ea, tenetur dolorem repellat error nobis odio veritatis, itaque pariatur voluptatibus tempore."
+  },
+    {
+    "photo": "paint.png",
+    "title": "Cloud",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime fuga nostrum ea, tenetur dolorem repellat error nobis odio veritatis."
+  }
+
+]
