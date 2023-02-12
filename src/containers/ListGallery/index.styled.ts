@@ -18,9 +18,17 @@ export const ListGalleryWrapper = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin-bottom: 20px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   > div {
     width: 100%;
+    min-width: 310px;
     height: 300px;
     overflow: hidden;
     position: relative;

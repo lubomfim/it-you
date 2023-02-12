@@ -8,9 +8,7 @@ const ListGallery = ({ cards }: { cards: CardProps[] }) => {
       {cards.map((el) => {
         return (
           <>
-            <div>
-              <GridImage img={el.photo} title={el.title} />
-            </div>
+            <GridImage card={el} />
           </>
         );
       })}

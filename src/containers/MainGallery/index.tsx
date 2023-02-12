@@ -1,10 +1,4 @@
-import {
-  GallerySubtitle,
-  GalleryTitle,
-  IconWrapper,
-  MainGalleryWrapper,
-  DescriptionHover,
-} from './index.styled';
+import { GalleryTitle, MainGalleryGrid, MainGalleryWrapper } from './index.styled';
 
 import data from './data.json';
 import GridImage from 'components/GridImage';
@@ -38,21 +32,14 @@ const MainGallery = () => {
   }, [listCards]);
 
   return (
-    <>
-      <MainGalleryWrapper>
+    <MainGalleryWrapper>
+      <MainGalleryGrid>
         <GalleryTitle>Connect people & spaces</GalleryTitle>
         {data.map((el) => {
           return (
-            <div key={el.title}>
-              <GallerySubtitle>{el.title}</GallerySubtitle>
-              <GridImage img={el.photo} title={el.title} />
-              <IconWrapper>
-                <img src='./assets/arrow.svg' alt='arrow' />
-              </IconWrapper>
-              <DescriptionHover className='description'>
-                <p>{el.description}</p>
-              </DescriptionHover>
-            </div>
+            <>
+              <GridImage card={el} />
+            </>
           );
         })}
         {!listCards.length && (
@@ -60,7 +47,7 @@ const MainGallery = () => {
             <Button handleClick={populateMoreCards}>Button</Button>
           </div>
         )}
-      </MainGalleryWrapper>
+      </MainGalleryGrid>
       <div style={{ paddingBottom: 100 }}>
         {listCards &&
           listCards.map((cards) => {
@@ -70,9 +57,13 @@ const MainGallery = () => {
               </>
             );
           })}
-        {!!listCards.length && <Button handleClick={populateMoreCards}>Load more</Button>}
+        {!!listCards.length && (
+          <div className='button-footer'>
+            <Button handleClick={populateMoreCards}>Load more</Button>
+          </div>
+        )}
       </div>
-    </>
+    </MainGalleryWrapper>
   );
 };
 
