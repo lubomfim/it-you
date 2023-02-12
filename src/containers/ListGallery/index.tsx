@@ -5,12 +5,8 @@ import GridImage from 'components/GridImage';
 const ListGallery = ({ cards }: { cards: CardProps[] }) => {
   return (
     <ListGalleryWrapper>
-      {cards.map((el) => {
-        return (
-          <>
-            <GridImage card={el} />
-          </>
-        );
+      {cards.map((el, index) => {
+        return <GridImage card={el} key={index} />;
       })}
     </ListGalleryWrapper>
   );
