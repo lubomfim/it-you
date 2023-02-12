@@ -1,6 +1,6 @@
 import { ButtonWrapper } from './index.styled';
 
-type ButtonProps = {
+export type ButtonProps = {
   children: React.ReactNode;
   handleClick: () => void;
 };
